@@ -1,8 +1,16 @@
 import { Component } from "react";
 import "./App.css";
+import Map from '../../components/Map/Map'
 
-export default class App extends Component {
-  render() {
-    return <main className="App">App</main>;
-  }
+export default function App() {
+  return (
+    
+    <>
+    
+    <Map></Map>
+
+    </>
+
+  )
 }
+
