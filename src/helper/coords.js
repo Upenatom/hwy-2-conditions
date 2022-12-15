@@ -1,5 +1,6 @@
 const lineSettings = { weight: 10, opacity: .5, linecap: 'square', lineJoin: "miter" }
 
+export const polygonOptions = { color: 'red', opacity: 0, fill: true }
 export const wpgStarbuckOptions = { color: 'red', ...lineSettings }
 export const wpgStarbuck = [[49.76837616638687, -97.3286450793967],
 [49.76860822393492, -97.59564997628331],
@@ -7,6 +8,8 @@ export const wpgStarbuck = [[49.76837616638687, -97.3286450793967],
 [49.768607736704574, -97.60845945216718],
 [49.76857086959301, -97.61802395805718],
 ]
+
+export const wpgStarbuckPolygon = [[49.78481090512662, -97.31895446777344],[49.77572158997985, -97.61764526367188], [49.760864648909966, -97.61009216308595],[49.750218070393466, -97.32238769531251],]
 
 export const starbuckFannystelleOptions = { color: 'blue', ...lineSettings }
 export const starbuckFannystelle = [[49.76857086959301, -97.61802395805718],
@@ -25,7 +28,7 @@ export const starbuckFannystelle = [[49.76857086959301, -97.61802395805718],
 [49.744068883926644, -97.77388930320741],
 [49.74356277185767, -97.77498364448549],
 [49.74238413424645, -97.77687191963197],
-[49.74029718212672, -97.77988672256471]]
+[49.74029718212672, -97.77988672256471],]
 
 
 export const fannystelleElmCreekOptions = { color: 'yellow', ...lineSettings }
@@ -345,6 +348,6 @@ export const nesbittHwy10 = [
   [49.58663949451919, -99.9588865041733],
   [49.586573417441116, -99.95956242084505],
   [49.5865595064659, -99.96167600154878],
-
-
 ]
+export const fullRouteOptions = { color: 'grey', opacity: .0 }
+export const fullRoute = [...wpgStarbuck, ...starbuckFannystelle, ...fannystelleElmCreek, ...elmCreekHaywood,...haywoodStClaude, ...stClaudeRathwell, ...rathwellTreherne, ...treherneHolland, ...hollandCypressRiver, ...cypressRiverGlenboro, ...glenboroWawanessa, ...wawanessaNesbitt, ...nesbittHwy10]
